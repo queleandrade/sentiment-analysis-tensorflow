@@ -4,7 +4,7 @@ import numpy as np
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from sentiment_neural_net import ff_neural_net
-from sentiment_neural_net import training
+from sentiment_neural_net import training0
 lemm = WordNetLemmatizer()
 
 x = tf.placeholder('float')
@@ -43,7 +43,7 @@ def get_sentiment(input_data):
 
 
 # Uncomment the row below to train the model
-# training(x)
+training(x)
 
 # call the 'use_neural_network' providing a sentence to check the neural network return
 get_sentiment('Lebron is a beast... nobody in the NBA comes even close')
